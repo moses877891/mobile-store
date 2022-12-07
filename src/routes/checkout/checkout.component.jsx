@@ -40,7 +40,7 @@ const CheckOut = () => {
             </div>
             <div className='flex items-center justify-center text-red-600'>
                 <button className=' uppercase bg-white hover:bg-red-600 hover:text-white
-                p-2 border border-red-700 rounded-md w-40 h-10'
+                p-2 border border-red-700 rounded-md w-40 h-10 mt-10'
                     type='button' onClick={removeAllHandler}
                 >Clear Cart</button>
             </div>
