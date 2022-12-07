@@ -16,7 +16,7 @@ const Navigation = () => {
     return (
         <>
             <div className=" bg-sky-700">
-                <div className="flex justify-between mx-2 py-2">
+                <div className="flex justify-between mx-4 py-2">
                     <span className="cursor-pointer scale-150" onClick={goToHomepage}>
                         🤳
                     </span>
