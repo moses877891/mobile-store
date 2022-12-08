@@ -12,6 +12,11 @@ export const selectIsCartOpen = createSelector(
     (cart) => cart.isCartOpen
 );
 
+export const selectIsModalOpen = createSelector(
+    [selectCartReducer],
+    (cart) => cart.isModalOpen
+)
+
 export const selectCartCount = createSelector(
     [selectCartItems],
     (cartItems) => cartItems.reduce((total, cartItems) =>
