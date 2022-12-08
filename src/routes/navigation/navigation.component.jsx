@@ -7,6 +7,8 @@ import { selectIsCartOpen } from '../../store/cart/cart.selector'
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartdropDown from "../../components/cart-dropdown/cart-dropdown.component";
 
+import './navigation.styles.scss';
+
 const Navigation = () => {
     const isCartOpen = useSelector(selectIsCartOpen);
     const navigate = useNavigate();
@@ -15,13 +17,10 @@ const Navigation = () => {
 
     return (
         <>
-            <div className=" bg-sky-700">
-                <div className="flex justify-between mx-4 py-2 ">
-                    <span className="cursor-pointer scale-150" onClick={goToHomepage}>
-                        🤳
-                    </span>
+            <div className="Nav-bg-color">
+                <div className="flex justify-between mx-16 py-2 ">
                     <span className="text-2xl font-semibold text-white cursor-pointer"
-                        onClick={goToHomepage}>Phone store</span>
+                        onClick={goToHomepage}>Use Reducer</span>
                     <CartIcon />
                     {isCartOpen && <CartdropDown />}
                 </div>

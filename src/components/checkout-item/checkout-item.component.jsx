@@ -17,7 +17,7 @@ const CheckOutItem = ({ cartItem }) => {
     const clearItemFromCartHandler = () => dispatch(clearItemFromCart(cartItems, cartItem));
 
     return (
-        <div className="flex flex-row w-full items-center justify-between">
+        <div className="flex flex-row w-full items-center justify-between my-5">
             <div className="flex">
                 <div className=" w-14">
                     <img src={imageUrl} alt={name} />
@@ -25,7 +25,7 @@ const CheckOutItem = ({ cartItem }) => {
                 <div className="flex flex-col pl-10">
                     <p className="font-medium">{name}</p>
                     <p className="my-1 text-neutral-500">₹{price.toLocaleString("hi-IN")}</p>
-                    <p className=" text-cyan-600 mb-5 cursor-pointer"
+                    <p className=" text-cyan-600 cursor-pointer"
                         onClick={clearItemFromCartHandler}>remove</p>
                 </div>
             </div>

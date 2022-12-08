@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { addItemToCart } from "../../store/cart/cart.action";
 import { selectCartItems } from "../../store/cart/cart.selector";
 
+import './product.styles.scss'
+
 const ProductCard = ({ phone }) => {
     const { name, imageUrl, price } = phone;
 
@@ -16,7 +18,7 @@ const ProductCard = ({ phone }) => {
     return (
         <div className="flex flex-col items-center my-5 mx-1">
             <div className="hover:opacity-90">
-                <img src={imageUrl} alt={name} />
+                <img className="custom-image" src={imageUrl} alt={name} />
             </div>
             <p className="mt-2 font-bold">{name}</p>
             <p className="my-1">Rs.{price.toLocaleString("hi-IN")}</p>
