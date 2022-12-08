@@ -9,3 +9,12 @@
 .border-color-checkout{
     border-color: #a7b7c6;
 }
+
+.popup-animation{
+        animation: fade-in-keyframes 0.3s;
+    
+        @keyframes fade-in-keyframes {
+            from {scale: 0;}
+            to {scale: 1.01;}
+        }
+}

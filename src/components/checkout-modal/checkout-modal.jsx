@@ -20,12 +20,12 @@ const CheckoutModal = () => {
 
     return (
         <div
-            className="justify-center flex overflow-x-scroll overflow-y-auto 
-            fixed inset-0 z-50 outline-none focus:outline-none "
+            className="justify-center flex overflow-x-hidden overflow-y-hidden
+            fixed inset-0 z-50 outline-none focus:outline-none popup-animation "
         >
-            <div className="relative w-full my-6 mx-auto max-w-3xl ">
+            <div className="relative w-full my-6 mx-auto max-w-3xl overflow-y-auto">
                 {/*content*/}
-                <div className="border-0 rounded-lg shadow-lg relative flex flex-col mx-10 bg-white outline-none focus:outline-none">
+                <div className="border-0 rounded-l-lg shadow-xl relative flex flex-col bg-white outline-none focus:outline-none">
                     {/*header*/}
                     <div className="flex justify-between pt-5 mb-5 border-solid mx-6
                      border-slate-200 rounded-t">

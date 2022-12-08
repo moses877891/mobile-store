@@ -23,7 +23,7 @@ const ProductCard = ({ phone }) => {
             <p className="mt-2 font-bold">{name}</p>
             <p className="my-1">Rs.{price.toLocaleString("hi-IN")}</p>
             <button type="button" className="bg-sky-800 hover:bg-sky-900 text-white
-            p-1 rounded-md hover:shadow-lg uppercase text-sm" onClick={handleSubmit}>add to card</button>
+            p-1 rounded-md hover:shadow-lg uppercase text-sm" onClick={handleSubmit}>add to cart</button>
         </div>
     )
 }
